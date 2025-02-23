@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta menu-title="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      menu-title="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Coffee</title>
     <link
       rel="stylesheet"
@@ -12,6 +15,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Header/Navigation -->
@@ -68,74 +75,178 @@
         </div>
       </section>
       <!-- About Section -->
-       <section class="about-section">
+      <section class="about-section">
         <div class="section-content">
           <div class="about-img-wrappper">
-            <img class="about-img" src="img/about-image.jpg" alt="Two people drinking coffe and having conversation">
+            <img
+              class="about-img"
+              src="img/about-image.jpg"
+              alt="Two people drinking coffe and having conversation"
+            />
           </div>
           <div class="about-details">
             <h2 class="section-title">About Us</h2>
-            <p class="about-description">At Coffee House in Berndorf, Germany, we pride ourselves on being a go-to destination for coffee lovers and conversation seekers alike. We're dedicated to providing an exceptional coffee experience in a cozy and inviting atmosphere, where guests can relax, unwind, and enjoy thier time in comfort </p>
+            <p class="about-description">
+              At Coffee House in Berndorf, Germany, we pride ourselves on being
+              a go-to destination for coffee lovers and conversation seekers
+              alike. We're dedicated to providing an exceptional coffee
+              experience in a cozy and inviting atmosphere, where guests can
+              relax, unwind, and enjoy thier time in comfort
+            </p>
             <div class="social-link-list">
-              <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
             </div>
           </div>
         </div>
-       </section>
-       <!-- Menu Section -->
-       <section class="menu-section">
+      </section>
+      <!-- Menu Section -->
+      <section class="menu-section">
+        <h2 class="section-title">Our Menu</h2>
         <div class="section-content">
-          <h2 class="section-title">Our Menu</h2>
           <ul class="menu-item-list">
             <li class="menu-item">
-              <img src="img/hot-beverages.png" alt="Hot Beverages" class="menu-img" />
+              <img
+                src="img/hot-beverages.png"
+                alt="Hot Beverages"
+                class="menu-img"
+              />
               <div class="menu-details">
                 <h3 class="menu-title">Hot Beverages</h3>
-                <p class="menu-description">Wide range of Steaming hot coffee to make you fresh and light.</p>
+                <p class="menu-description">
+                  Wide range of Steaming hot coffee to make you fresh and light.
+                </p>
               </div>
             </li>
             <li class="menu-item">
-              <img src="img/cold-beverages.png" alt="Cold Beverages" class="menu-img" />
+              <img
+                src="img/cold-beverages.png"
+                alt="Cold Beverages"
+                class="menu-img"
+              />
               <div class="menu-details">
                 <h3 class="menu-title">Cold Beverages</h3>
-                <p class="menu-description">Creamy and frothy cold coffee to make you cool.</p>
+                <p class="menu-description">
+                  Creamy and frothy cold coffee to make you cool.
+                </p>
               </div>
             </li>
             <li class="menu-item">
-              <img src="img/refreshment.png" alt="Refreshment" class="menu-img" />
+              <img
+                src="img/refreshment.png"
+                alt="Refreshment"
+                class="menu-img"
+              />
               <div class="menu-details">
                 <h3 class="menu-title">Refreshment</h3>
-                <p class="menu-description">Fruit and icy refreshing drink to make feel refresh.</p>
+                <p class="menu-description">
+                  Fruit and icy refreshing drink to make feel refresh.
+                </p>
               </div>
             </li>
             <li class="menu-item">
-              <img src="img/special-combo.png" alt="Special Combos" class="menu-img" />
+              <img
+                src="img/special-combo.png"
+                alt="Special Combos"
+                class="menu-img"
+              />
               <div class="menu-details">
                 <h3 class="menu-title">Special Combos</h3>
-                <p class="menu-description">Your favorite eating and drinking combations.</p>
+                <p class="menu-description">
+                  Your favorite eating and drinking combations.
+                </p>
               </div>
             </li>
             <li class="menu-item">
               <img src="img/desserts.png" alt="Dessert" class="menu-img" />
               <div class="menu-details">
                 <h3 class="menu-title">Dessert</h3>
-                <p class="menu-description">Satiate your palate and take you on a culinary treat.</p>
+                <p class="menu-description">
+                  Satiate your palate and take you on a culinary treat.
+                </p>
               </div>
             </li>
             <li class="menu-item">
-              <img src="img/burger-frenchfries.png" alt="burger & French Fries" class="menu-img" />
+              <img
+                src="img/burger-frenchfries.png"
+                alt="burger & French Fries"
+                class="menu-img"
+              />
               <div class="menu-details">
                 <h3 class="menu-title">Burger & French Fries</h3>
-                <p class="menu-description">Quick bites to satisfy your small size hunger.</p>
+                <p class="menu-description">
+                  Quick bites to satisfy your small size hunger.
+                </p>
               </div>
             </li>
           </ul>
-
         </div>
-       </section>
+      </section>
+      <!-- Testimonials section -->
+      <section class="testimonials-section" id="testimonials">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
+                  <img src="img/user-1.jpg" alt="User" class="user-img" />
+                  <h3 class="name">Sarah Johnson</h3>
+                  <i class="feedback"
+                    >"Loved the French roast. Perfectly balanced and rich. Will
+                    order again!"</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="img/user-2.jpg" alt="User" class="user-img" />
+                  <h3 class="name">James Wilson</h3>
+                  <i class="feedback"
+                    >"Great espresso blend! Smooth and bold flavor. Fast
+                    shipping too!"</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="img/user-3.jpg" alt="User" class="user-img" />
+                  <h3 class="name">Michael Brown</h3>
+                  <i class="feedback"
+                    >"Fantastic mocha flavor. Fresh and aromatic. Quick
+                    shipping!"</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="img/user-4.jpg" alt="User" class="user-img" />
+                  <h3 class="name">Emily Harris</h3>
+                  <i class="feedback"
+                    >"Excellent quality! Fresh beans and quick delivery. Highly
+                    recommend."</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="img/user-5.jpg" alt="User" class="user-img" />
+                  <h3 class="name">Anthony Thompson</h3>
+                  <i class="feedback"
+                    >"Best decaf I've tried! Smooth and flavorful. Arrived
+                    promptly."</i
+                  >
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- Linking swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/script.js"></script>
   </body>
