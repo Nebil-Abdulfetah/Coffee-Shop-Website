@@ -32,7 +32,7 @@
 }
 
 /************************
-    General
+    General stylings
  ************************/
 * {
   font-family: "Poppins", serif;
@@ -60,7 +60,21 @@ button {
   margin: 0 auto;
   padding: 0 20px;
 }
-
+.section-title {
+    text-align: center;
+    font-size: var(--font-size-xl);
+    text-transform: uppercase;
+    padding: 60px 0 100px;
+}
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background-color: var(--secondary-color);
+}
 /************************
     Header/Nav section
  ************************/
@@ -161,6 +175,51 @@ header {
   color: var(--primary-color);
   border-color: transparent;
 }
+/************************
+    About section
+ ************************/
+.about-section {
+    padding: 120px 0;
+    background-color: var(--light-pink-color);
+}
+.about-section .section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.about-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+.about-details {
+    max-width: 50%;
+}
+.about-section .section-title {
+    padding: 0;
+}
+.about-description {
+    line-height: 30px;
+    /* text-align: center; */
+    font-size: var(--font-size-m);
+    margin: 50px 0 30px;
+}
+.social-link-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.social-link {
+    font-size: var(--font-size-l);
+    color: var(--primary-color);
+    transition: .2s ease;
+}
+.social-link:hover, .social-link:focus {
+    color: var(--secondary-color);
+}
+
 @media screen and (max-width: 900px) {
   :root {
     --font-size-m: 1rem;
@@ -205,6 +264,7 @@ header {
   }
   #menu-open-button {
     color: var(--white-color);
+    z-index: 1;
   }
   body.show-mobile-menu .nav-item-list {
     left: 0;
@@ -229,10 +289,22 @@ header {
     margin-right: 0;
   }
   .subtitle,
-  .description {
+  .description, .about-description {
     max-width: 100%;
   }
   .hero-details {
     justify-content: center;
   }
+
+  .about-section .section-content {
+    flex-direction: column;
+    gap: 70px;
+  }
+  .about-img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    max-width: 250px;
+  }
 }
+
